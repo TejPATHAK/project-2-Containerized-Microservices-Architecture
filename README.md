@@ -46,7 +46,7 @@ This project implements a **microservices-based architecture** where each servic
 - Python 3+ and pip (optional for local run)
 
 ---
-###📂 Folder Structure
+### 📂 Folder Structure
 
 ```bash
 project-root/
@@ -72,11 +72,11 @@ docker-compose up --build
 ```
 🔗 Access the app at: http://localhost:80
 
-## 👨‍💻 Author
-Tejaswi Pathak
-Connect on LinkedIn
-
 ## 📅 Project Status
 ✅ Stable
 🛠️ Actively maintained
 🔍 Open to contributions
+
+## 👨‍💻 Author
+Tejaswi Pathak
+Connect on LinkedIn
