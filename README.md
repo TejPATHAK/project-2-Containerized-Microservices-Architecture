@@ -1,7 +1,5 @@
 # 🚀 Project 2: Containerized Microservices Architecture
 
-### 📖 Introduction
-
 This project showcases a simple containerized architecture using a Python Flask web application and MongoDB, orchestrated with Docker Compose. It simulates a microservices environment suitable for learning containerization, inter-service communication, and environment-based configuration. The Flask app includes RESTful endpoints for logs, metrics, and health status, making it useful for DevOps and monitoring practice. MongoDB serves as the backend database, storing user input or test data.
 
 The project is ideal for those beginning with Docker, Flask, and service orchestration principles in a DevOps context.
