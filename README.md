@@ -1,40 +1,45 @@
 # 🚀 Project 2: Containerized Microservices Architecture
 
-A complete DevOps-ready microservices application leveraging **Docker**, **Flask**, **MongoDB**, **Nginx**, and **CI/CD pipelines**. Designed for scalability, observability, and performance — deploy your apps faster and smarter.
+### 📖 Introduction
+
+This project showcases a simple containerized architecture using a Python Flask web application and MongoDB, orchestrated with Docker Compose. It simulates a microservices environment suitable for learning containerization, inter-service communication, and environment-based configuration. The Flask app includes RESTful endpoints for logs, metrics, and health status, making it useful for DevOps and monitoring practice. MongoDB serves as the backend database, storing user input or test data.
+
+The project is ideal for those beginning with Docker, Flask, and service orchestration principles in a DevOps context.
+
 
 ---
 
-## 🔍 Project Overview
+### 🔍 Project Overview
 
 This project implements a **microservices-based architecture** where each service runs independently in its own container. It includes:
 
-- A Flask-based web frontend
-- A MongoDB database service
-- Docker Compose orchestration
-- Health check and logging endpoints
-- Scalable Nginx reverse proxy
-- CI/CD integrations possible via Jenkins or GitHub Actions
+- ✅ A **Flask-based API service** for routing and response logic  
+- ✅ A **Dockerfile** to containerize the Flask application  
+- ✅ A **Docker Compose** setup to orchestrate containers  
+- ✅ Endpoints for **health checks** (`/health`), **performance metrics** (`/metrics`), and **logging** (`/logs`)  
+- ✅ A **unit test suite** (`test_app.py`) using Pytest  
 
 ---
 
-## 🧰 Built With
+### 🧰 Built With
 
-- Python (Flask)
-- MongoDB
-- Nginx
-- Docker & Docker Compose
-- GitHub Actions / Jenkins (for CI/CD)
+- [Python (Flask)](https://flask.palletsprojects.com/)
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
+- [Pytest](https://docs.pytest.org/) – For testing
+
 
 ---
 
-## 📦 Features
+### 📦 Features
 
-- 🧱 **Microservice Isolation** — Each service runs in its own container.
-- 🔁 **Docker Compose** — Simplifies orchestration of services.
-- 📡 **Health Monitoring** — `/health` endpoint available.
-- 📊 **Logging & Metrics** — Access `/logs` and `/metrics` endpoints.
-- 🐳 **Containerization** — Easy to deploy and scale.
-- ⚙️ **Reverse Proxy** — Handled via Nginx.
+- **🧱 Containerized Architecture** – Entire app runs in isolated Docker containers for easier deployment and scalability.
+- **⚡ Lightweight Flask App** – A fast and minimal API server ideal for microservice-based setups.
+- **📡 Health Checks** – `/health` and `/metrics` endpoints help with service uptime monitoring and performance tracking.
+- **📄 Logging Endpoint** – `/logs` provides access to application logs for debugging and observability.
+- **🧪 Unit Testing Support** – Comes with `test_app.py` for verifying routes and application logic.
+- **🔌 Port Configurable** – Easily modify exposed ports through `docker-compose.yml`.
+
 
 ---
 
@@ -42,8 +47,13 @@ This project implements a **microservices-based architecture** where each servic
 
 ### ✅ Prerequisites
 
-- Docker & Docker Compose installed
-- Python 3+ and pip (optional for local run)
+Before running this project, ensure you have the following installed:
+
+- [Docker](https://www.docker.com/get-started)
+- [Docker Compose](https://docs.docker.com/compose/)
+- Python 3+ (only if you want to run the Flask app locally)
+- pip (Python package manager, for local development)
+
 
 ---
 ### 📂 Folder Structure
@@ -51,12 +61,11 @@ This project implements a **microservices-based architecture** where each servic
 ```bash
 project-root/
 │
-├── app/                # Flask app logic
-├── nginx/              # Nginx reverse proxy config
-├── docker-compose.yml
-├── Dockerfile
-├── requirements.txt
-└── test_app.py
+├── app/                # Core Flask app logic
+├── docker-compose.yml  # Docker Compose configuration
+├── Dockerfile          # Dockerfile to containerize the app
+├── requirements.txt    # Python dependencies
+└── test_app.py         # Unit test file
 ```
 
 ### 📁 Clone the Repository
@@ -78,5 +87,5 @@ docker-compose up --build
 🔍 Open to contributions
 
 ## 👨‍💻 Author
-Tejaswi Pathak
-Connect on LinkedIn
+- Tejaswi Pathak
+- Connect on LinkedIn
